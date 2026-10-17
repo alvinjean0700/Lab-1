@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvin Bakery - Home</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #fff8f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 20px 28px;
+            background-color: navy;
+            color: antiquewhite;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 4px 0 0;
+            font-size: 0.9rem;
+            color: #ffd9a0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #F4A261;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 24px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background-color: #ffffff;
+            padding: 20px 24px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2 {
+            color: navy;
+            border-bottom: 2px solid #F4A261;
+            padding-bottom: 6px;
+            margin-top: 0;
+        }
+
+        section h3 {
+            color: #444;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+        }
+
+        #gallery h2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        #gallery img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #F4A261;
+            transition: transform 0.3s ease;
+        }
+
+        #gallery img:hover {
+            transform: scale(1.05);
+        }
+
+
+        #contact a {
+            color: navy;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            color: #F4A261;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: navy;
+            color: antiquewhite;
+            text-align: center;
+            padding: 16px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                justify-content: center;
+            }
+
+            #gallery img {
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>ALVIN BAKERY</h1>
+            <p>We deliver all orders at your convenience.</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#menu">Our Menu</a></li>
+                <li><a href="#prices">Prices</a></li>
+                <li><a href="#offers">Special Offers</a></li>
+                <li><a href="#contact">Find Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+   
+        <section id="menu">
+            <h2>Alvin Bread and Cakes</h2>
+            <h3>Types of bread and cakes</h3>
+            <ul>
+                <li>White loaf</li>
+                <li>Fruit loaf</li>
+                <li>Queen cakes</li>
+                <li>Chocolate cakes</li>
+                <li>Cake bread</li>
+            </ul>
+        </section>
+
+
+        <section id="prices">
+            <h2>Price of Items</h2>
+            <ul>
+                <li>White loaf — 5,000</li>
+                <li>Fruit loaf — 7,000</li>
+                <li>Queen cakes — 3,000</li>
+                <li>Chocolate cakes — 4,000</li>
+            </ul>
+        </section>
+
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <img src="WHITE LOAF.jpg" alt="White loaf">
+            <img src="FRUIT LOAF.webp" alt="Fruit loaf">
+            <img src="QUEEN CAKES.webp" alt="Queen cakes">
+            <img src="CHOCO CAKE.webp" alt="Chocolate cakes">
+        </section>
+
+        <section id="offers">
+            <h2>Special Offers</h2>
+            <p>We offer discounts on items ordered in bulk. Contact us for a custom quote!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Find Us On</h2>
+            <ul>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">TikTok</a></li>
+                <li><a href="#">WhatsApp</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Alvin Bakery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
